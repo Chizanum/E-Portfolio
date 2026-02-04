@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-12">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] text-center space-y-12 relative isolate">
+      <AnimatedBackground />
       <div className="space-y-6 max-w-2xl animate-in fade-in slide-in-from-bottom-4 duration-1000">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
           Learning in public.

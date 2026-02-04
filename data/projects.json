@@ -2,13 +2,15 @@
   {
     "id": "p1",
     "title": "Minimal Portfolio",
-    "goal": "Build a clean, fast portfolio site.",
+    "goal": "The goal of this portfolio is to showcase my continuous growth as a developer by sharing what I’m learning, reflecting weekly, explaining key concepts I’ve mastered, and building mini projects. It demonstrates consistency, curiosity, and real progress over time.",
     "tools": [
-      "Next.js",
-      "TailwindCSS"
+      "Next.js (App Router)",
+      "TailwindCSS v3",
+      "DaisyUI",
+      "Node.js FS Module"
     ],
-    "learned": "How to use DaisyUI themes effectively.",
-    "link": "https://github.com/chizanumidemili/portfolio"
+    "learned": "Building a 'Local CMS': I learned how to use Next.js API routes (`app/api/content`) to read and write directly to the local filesystem, creating a functional Admin Dashboard without needing a database.\n\nTheming: I explored Tailwind CSS and DaisyUI themes to create multiple visual modes (Lofi, Nord, Dark) that users can switch between.\n\nNext.js App Router: Gained deep practice with Server Components for the public pages (fast, SEO-friendly) vs Client Components for the interactive Admin dashboard.",
+    "link": "https://github.com/Chizanum/E-Portfolio"
   },
   {
     "title": "E-commerce app",
