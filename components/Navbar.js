@@ -22,6 +22,12 @@ export default function Navbar() {
         themeChange(false);
     }, []);
 
+    const handleThemeChange = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        setIsOpen(false);
+    };
+
     return (
         <nav className="sticky top-0 z-40 w-full backdrop-blur-lg bg-base-100/80 border-b border-base-200 transition-all duration-300">
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
@@ -85,9 +91,9 @@ export default function Navbar() {
                         ))}
                         <div className="divider my-0"></div>
                         <div className="flex gap-2 justify-center pb-2">
-                            <button className="btn btn-xs" data-set-theme="lofi" onClick={() => setIsOpen(false)}>Lofi</button>
-                            <button className="btn btn-xs" data-set-theme="nord" onClick={() => setIsOpen(false)}>Nord</button>
-                            <button className="btn btn-xs" data-set-theme="business" onClick={() => setIsOpen(false)}>Dark</button>
+                            <button className="btn btn-xs" onClick={() => handleThemeChange('lofi')}>Lofi</button>
+                            <button className="btn btn-xs" onClick={() => handleThemeChange('nord')}>Nord</button>
+                            <button className="btn btn-xs" onClick={() => handleThemeChange('business')}>Dark</button>
                         </div>
                     </div>
                 </div>
