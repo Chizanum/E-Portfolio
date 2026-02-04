@@ -85,9 +85,9 @@ export default function Navbar() {
                         ))}
                         <div className="divider my-0"></div>
                         <div className="flex gap-2 justify-center pb-2">
-                            <button className="btn btn-xs" data-set-theme="lofi">Lofi</button>
-                            <button className="btn btn-xs" data-set-theme="nord">Nord</button>
-                            <button className="btn btn-xs" data-set-theme="business">Dark</button>
+                            <button className="btn btn-xs" data-set-theme="lofi" onClick={() => setIsOpen(false)}>Lofi</button>
+                            <button className="btn btn-xs" data-set-theme="nord" onClick={() => setIsOpen(false)}>Nord</button>
+                            <button className="btn btn-xs" data-set-theme="business" onClick={() => setIsOpen(false)}>Dark</button>
                         </div>
                     </div>
                 </div>
