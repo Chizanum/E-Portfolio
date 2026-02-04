@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Week-1",
+    "date": "2026-02-01",
+    "learnings": [
+      "Authentication vs Authorization",
+      "Structured Recap of Software Concepts",
+      "Templates and Dynamic Rendering in React"
+    ]
+  }
+]

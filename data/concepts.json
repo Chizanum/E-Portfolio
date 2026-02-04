@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Client–Server Architecture",
+    "explanation": "The client is the interface users interact with (browser, mobile app). The server handles logic, authentication, data processing, and talks to the database. They communicate over HTTP.",
+    "confusion": "Everything felt mashed together. It wasn’t clear where HTML stops and PHP or backend logic begins, or why the browser can’t just do everything.",
+    "click": "Realizing the browser is basically a polite messenger. It asks for things and shows results, but the server is the one doing the heavy thinking and record keeping.",
+    "example": "// Client (browser)\nfetch('/login', {\n  method: 'POST',\n  body: JSON.stringify({ email, password })\n});\n\n// Server (PHP)\nif ($validUser) {\n  echo json_encode(['status' => 'ok']);\n}",
+    "id": "1770232106245"
+  },
+  {
+    "title": "Authentication vs Authorization",
+    "explanation": "Authentication answers “Who are you?” Authorization answers “What are you allowed to do?”",
+    "confusion": "They sounded like the same thing, or the same process to achieve it.",
+    "click": "Authentication = Who are you?\nVerifies identity. Login, password, OTP, biometrics. If this fails, you’re not in the system at all.\nAuthorization = What can you do?\nChecks permissions after login. Controls access to pages, actions, and data.\n",
+    "example": "// Authentication\n$user = login($email, $password);\n\n// Authorization\nif ($user->role !== 'admin') {\n  denyAccess();\n}",
+    "id": "1770232551896"
+  },
+  {
+    "title": "Templates vs Dynamic Rendering",
+    "explanation": "Templates define structure, dynamic rendering fills them with data at runtime.\n",
+    "confusion": "It felt like content was “magically” appearing without being written into the page.\n",
+    "click": "Understanding that templates are molds and data is the liquid poured in.\n",
+    "example": "// Template (component)\nfunction CourseCard({ title, description }) {\n  return (\n    <div className=\"card\">\n      <h2>{title}</h2>\n      <p>{description}</p>\n      <button>Enroll</button>\n    </div>\n  );\n}\n\n// Dynamic rendering (using the component)\nconst courses = [\n  { title: \"React Basics\", description: \"Learn React from scratch.\" },\n  { title: \"Advanced JS\", description: \"Deep dive into JavaScript.\" }\n];\n\nfunction CourseList() {\n  return (\n    <div>\n      {courses.map((course, index) => (\n        <CourseCard \n          key={index} \n          title={course.title} \n          description={course.description} \n        />\n      ))}\n    </div>\n  );\n}",
+    "id": "1770232688343"
+  }
+]

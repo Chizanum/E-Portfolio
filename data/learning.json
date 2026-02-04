@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "topic": "Next.js App Router",
+    "description": "Deep diving into Server Components and Server Actions.",
+    "status": "applying",
+    "insights": "Server components reduce client bundle size significantly."
+  },
+  {
+    "topic": "React & React-native Conditional Rendering",
+    "description": "Show or hide UI parts based on app state or data.\nEssential for things like login forms, admin vs student views, error messages.\n",
+    "status": "applying",
+    "insights": "Tailored UX: Your app feels alive and smart because it reacts to who is using it and what they’re doing.\n\nSecurity & control: You don’t want a student accidentally seeing admin controls or secret pages. Conditional rendering lets you gate those views cleanly.\n\nError handling: Showing meaningful messages only when something goes wrong makes apps less frustrating and more transparent.",
+    "id": "1770233004594"
+  },
+  {
+    "topic": "React-email Templates",
+    "description": "\nReact-email templates are React components designed specifically to build HTML email layouts. Instead of crafting raw HTML emails by hand—which is painful and error-prone—React-email lets you write reusable, modular components that render clean, well-structured email HTML.\n\nThese templates often include styling, images, buttons, and dynamic content placeholders. You write the email like you would a React app, but it compiles down to an email-friendly HTML that works well across most email clients.",
+    "status": "building",
+    "insights": "Reusability: Build once, reuse across multiple emails (welcome, password reset, notifications).\nMaintainability: Easier to update and keep consistent design.\nDynamic content: Insert personalized data (user names, links) effortlessly via props.\nBetter structure: JSX syntax helps organize complex emails better than raw HTML strings.\nTooling integration: Works nicely with modern build systems, bundlers, and TypeScript.",
+    "id": "1770233907003"
+  }
+]

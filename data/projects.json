@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "title": "Minimal Portfolio",
+    "goal": "Build a clean, fast portfolio site.",
+    "tools": [
+      "Next.js",
+      "TailwindCSS"
+    ],
+    "learned": "How to use DaisyUI themes effectively.",
+    "link": "https://github.com/chizanumidemili/portfolio"
+  },
+  {
+    "title": "E-commerce app",
+    "goal": "The goal of this project is to build a functional e-commerce application that allows users to browse products, add items to a cart, and complete purchases through a smooth and secure checkout process.\n",
+    "tools": [
+      "react-native",
+      "axios",
+      "mongo-Db",
+      "tailwind css",
+      "daisy-ui",
+      "lucide react",
+      "node js",
+      "express js",
+      "react"
+    ],
+    "learned": "Through this project, I learned how to build and connect a full-stack application using React, React Native, Node.js, Express, and MongoDB. I gained hands-on experience structuring backend APIs, handling client–server communication with Axios, and managing data flow between the frontend and database. I also improved my understanding of component-based architecture, asynchronous operations, and error handling, while using Tailwind CSS, DaisyUI, and Lucide React to create a consistent and user-friendly interface. Overall, the project helped me understand how real-world applications are designed, built, and debugged across both frontend and backend layers.",
+    "link": "https://github.com/Chizanum/ecommerce",
+    "id": "1770230416762"
+  },
+  {
+    "title": "Swamped",
+    "goal": "A mobile task manager app that saves user data locally using asynchronous functions to ensure data is stored persistently without slowing down the app.",
+    "tools": [
+      "React Native",
+      "AsyncStorage",
+      "JavaScript Promises / async-await",
+      "Expo",
+      "TypeScript"
+    ],
+    "learned": "I learned how to build a mobile task manager app that smoothly saves and retrieves user data locally by leveraging asynchronous functions, ensuring the app stays responsive and data persists across sessions without relying on the internet.",
+    "link": "https://github.com/Chizanum/swamped",
+    "id": "1770233288784"
+  },
+  {
+    "title": "Wallet-app",
+    "goal": "A mobile app that securely authenticates users and integrates with databases to accurately track, save, and manage their expenses and income, providing a dynamic, real-time dashboard that visually displays financial insights and helps users make smarter money decisions.",
+    "tools": [
+      "React Native",
+      "Clerk(authentication)",
+      "Rest api's",
+      "PostgreSQL",
+      "Expo",
+      "typescript",
+      "tailwind-css",
+      "native-wind"
+    ],
+    "learned": "I learned how to build a mobile finance app that securely authenticates users and uses a robust backend database like PostgreSQL to store and manage detailed expense and income data.",
+    "link": "https://github.com/Chizanum/wallet-app",
+    "id": "1770233597016"
+  }
+]
