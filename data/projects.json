@@ -60,5 +60,24 @@
     "learned": "I learned how to build a mobile finance app that securely authenticates users and uses a robust backend database like PostgreSQL to store and manage detailed expense and income data.",
     "link": "https://github.com/Chizanum/wallet-app",
     "id": "1770233597016"
+  },
+  {
+    "title": "ECHO - Learning AI System",
+    "goal": "A conversational AI that learns from its mistakes through self-evaluation and memory-based improvement. Powered by local LLM (Ollama + Llama 3.2) for true intelligence, ECHO generates intelligent responses, evaluates its own quality, stores low-scoring responses in memory, and continuously improves future responses by applying lessons from past mistakes.",
+    "tools": [
+      "Python",
+      "Flask",
+      "Ollama",
+      "Llama 3.2 3B",
+      "React",
+      "Vite",
+      "",
+      "Tailwind CSS",
+      "DaisyUI",
+      "JavaScript"
+    ],
+    "learned": "I learned how to build a self-improving AI system that uses local LLMs for intelligent response generation and self-evaluation. I integrated Ollama with Llama 3.2 to create a completely free and private AI that learns from its mistakes by storing low-scoring responses in memory and using them as context for future improvements. I also learned how to build a beautiful React frontend with Tailwind CSS and DaisyUI, and how to create a Flask REST API that connects the AI backend with the web interface.",
+    "link": "https://github.com/Chizanum/Echo",
+    "id": "1770408160515"
   }
 ]
