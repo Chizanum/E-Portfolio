@@ -11,7 +11,7 @@ export default async function ConceptsPage() {
     const items = await getContent("concepts");
 
     return (
-        <div className="space-y-12 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
+        <div className="space-y-12 max-w-3xl mx-auto px-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <header className="space-y-4">
                 <h1 className="text-4xl font-bold tracking-tight">Concepts</h1>
                 <p className="text-xl text-base-content/70 font-light">
@@ -25,28 +25,28 @@ export default async function ConceptsPage() {
                         key={concept.id}
                         className="group collapse collapse-arrow bg-base-100 border border-base-200 hover:border-accent/50 transition-colors"
                     >
-                        <summary className="collapse-title text-xl font-medium group-hover:text-accent transition-colors">
+                        <summary className="collapse-title text-xl font-medium group-hover:text-accent transition-colors break-words hyphens-auto">
                             {concept.title}
                         </summary>
-                        <div className="collapse-content space-y-4">
-                            <p className="text-lg leading-relaxed pt-2">
+                        <div className="collapse-content space-y-4 px-2 md:px-4">
+                            <p className="text-lg leading-relaxed pt-2 break-words hyphens-auto">
                                 {concept.explanation}
                             </p>
 
-                            <div className="grid md:grid-cols-2 gap-4 text-sm">
-                                <div className="p-4 bg-error/5 rounded-lg border border-error/10">
-                                    <h4 className="font-bold text-error mb-2">Why it was confusing:</h4>
-                                    <p>{concept.confusion}</p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                                <div className="p-3 md:p-4 bg-error/5 rounded-lg border border-error/10">
+                                    <h4 className="font-bold text-error mb-2 break-words hyphens-auto">Why it was confusing:</h4>
+                                    <p className="break-words whitespace-pre-wrap hyphens-auto">{concept.confusion}</p>
                                 </div>
-                                <div className="p-4 bg-success/5 rounded-lg border border-success/10">
-                                    <h4 className="font-bold text-success mb-2">What made it click:</h4>
-                                    <p>{concept.click}</p>
+                                <div className="p-3 md:p-4 bg-success/5 rounded-lg border border-success/10">
+                                    <h4 className="font-bold text-success mb-2 break-words hyphens-auto">What made it click:</h4>
+                                    <p className="break-words whitespace-pre-wrap hyphens-auto">{concept.click}</p>
                                 </div>
                             </div>
 
                             {concept.example && (
-                                <div className="mockup-code bg-neutral text-neutral-content text-sm relative">
-                                    <pre className="px-6 py-4"><code>{concept.example}</code></pre>
+                                <div className="mockup-code bg-neutral text-neutral-content text-sm relative w-full">
+                                    <pre className="px-4 md:px-6 py-4 overflow-x-auto text-xs md:text-sm"><code>{concept.example}</code></pre>
                                     <div className="absolute top-2 right-4 text-xs opacity-50">example</div>
                                 </div>
                             )}

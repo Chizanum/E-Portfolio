@@ -19,5 +19,12 @@
     "status": "building",
     "insights": "Reusability: Build once, reuse across multiple emails (welcome, password reset, notifications).\nMaintainability: Easier to update and keep consistent design.\nDynamic content: Insert personalized data (user names, links) effortlessly via props.\nBetter structure: JSX syntax helps organize complex emails better than raw HTML strings.\nTooling integration: Works nicely with modern build systems, bundlers, and TypeScript.",
     "id": "1770233907003"
+  },
+  {
+    "topic": "Self-Reflective AI Learning Loops",
+    "description": "Designing an AI system that evaluates its own responses, stores failures, and improves over time without external rewards. Focuses on internal feedback, memory, and intent understanding rather than raw model accuracy.",
+    "status": "building",
+    "insights": "Learning vs responding: You’ll see the difference between an AI that talks and one that actually learns from its mistakes.\nMemory as intelligence: Storing failures and reflections turns past errors into future strength.\nSystem thinking: This project teaches you how real AI systems are pipelines of intent → response → evaluation → memory, not just a single model.\nFoundation for advanced AI: These ideas directly scale into autonomous agents, copilots, and human-like learning systems.",
+    "id": "1770400861653"
   }
 ]

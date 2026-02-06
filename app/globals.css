@@ -51,3 +51,28 @@ html {
 .animation-delay-4000 {
   animation-delay: 4s;
 }
+
+/* Override DaisyUI mockup-code minimum width for mobile */
+.mockup-code {
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Ensure collapse components don't force minimum width */
+.collapse {
+  min-width: 0 !important;
+}
+
+/* Force all text to wrap properly on mobile */
+@media (max-width: 768px) {
+  * {
+    min-width: 0 !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  pre, code {
+    white-space: pre-wrap !important;
+    word-break: break-all;
+  }
+}
